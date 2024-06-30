@@ -1,0 +1,20 @@
+.input {
+  border-radius: 8px;
+  margin-top: 4px;
+  padding: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px #e1e3e6 solid;
+  background-color: #ffffff;
+  color: #999fa6;
+  max-width: 400px;
+}
+.input:hover {
+  cursor: pointer;
+}
+.input:focus {
+  outline: none;
+  border-color: #ff5500;
+}

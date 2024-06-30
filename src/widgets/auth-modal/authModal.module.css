@@ -1,0 +1,47 @@
+.container {
+  width: 340px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 200px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 40%;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.firstLine {
+  margin-bottom: 24px;
+  display: flex;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.cross {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* display: flex; */
+}

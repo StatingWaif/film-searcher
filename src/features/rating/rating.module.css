@@ -1,0 +1,18 @@
+.input {
+  display: none;
+}
+.container {
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.greyNumber {
+  color: #ababab;
+}

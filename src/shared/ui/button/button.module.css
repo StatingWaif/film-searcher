@@ -1,0 +1,27 @@
+.button {
+  background-color: #ff5500;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: var(--font-family-primary);
+  padding: 8px 16px 8px 16px;
+  border: none;
+  width: fit-content;
+  height: 40px;
+}
+.button:hover {
+  background-color: #e94e00;
+  transition-duration: 50ms;
+}
+
+.buttonOutlined {
+  background: none;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+}
+
+.buttonOutlined:hover {
+  border: 1px solid #e94e00;
+  background: none;
+}

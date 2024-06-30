@@ -1,0 +1,14 @@
+.button {
+  background: none;
+  border: none;
+  display: flex;
+}
+.left {
+  transform: rotate(180deg);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}

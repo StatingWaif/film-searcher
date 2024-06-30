@@ -1,0 +1,18 @@
+.filter {
+  background-color: #ffffff;
+  width: 408px;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-height: 240px;
+  box-sizing: border-box;
+}
+
+.subName {
+  color: #1b1f23;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 16px;
+}
