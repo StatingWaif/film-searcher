@@ -1,9 +1,9 @@
 import { Header } from "../widgets/header";
-import { useGetMovieByIdQuery } from "../widgets/movie-search/movieApi";
 import styles from "./MoviePage.module.css";
 import { MovieInfo } from "../widgets/movie-info/movie-info";
 import { useParams } from "react-router-dom";
 import { Actors } from "../widgets/actors";
+import { useGetMovieByIdQuery } from "../shared/store/movieApi";
 
 export const MoviePage = () => {
   const { id } = useParams();

@@ -4,9 +4,9 @@ import styles from "./header.module.css";
 import { AuthModal } from "../../auth-modal/auth-modal";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../movie-search/store";
-import { logout } from "../../movie-search/authSlice";
 import { Avatar } from "../avatar";
+import { RootState } from "../../../shared/store/store";
+import { logout } from "../../../shared/store/authSlice";
 
 export const Header = () => {
   const dispatch = useDispatch();

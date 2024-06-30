@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useState } from "react";
 import { Modal } from "../../shared/ui/modal/modal";
 import { Input } from "../../shared/ui/input";
 import styles from "./authModal.module.css";
@@ -6,7 +6,7 @@ import { Button } from "../../shared/ui/button";
 import { Cross } from "./cross";
 import { BASE_URL } from "../../consts";
 import { useDispatch } from "react-redux";
-import { login } from "../movie-search/authSlice";
+import { login } from "../../shared/store/authSlice";
 interface AuthModalProps {
   onClose: () => void;
 }

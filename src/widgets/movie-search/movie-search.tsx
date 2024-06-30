@@ -2,7 +2,6 @@ import { Input } from "../../shared/ui/input";
 import { Filter } from "../filter";
 import styles from "./movieSearch.module.css";
 import { Movies } from "./movies/movies";
-import { useGetMoviesQuery } from "./movieApi";
 import { useEffect, useState } from "react";
 import { Pagination } from "./pagination";
 import { MovieNotFound } from "./movie-not-found";
@@ -10,6 +9,7 @@ import { Loader } from "../../shared/ui/loader/loader";
 import { InfoLayout } from "./info-layout/info-layout";
 import { useSearchParams } from "react-router-dom";
 import { useDebounce } from "../../shared/hooks/useDebounce";
+import { useGetMoviesQuery } from "../../shared/store/movieApi";
 
 export const MovieSearch = () => {
   const [searchParams, setSearchParams] = useSearchParams();
