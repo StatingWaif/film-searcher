@@ -42,6 +42,9 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
           <div className={styles.buttonContainer}>
             <Button
               onClick={() => {
+                if (!password || !username) {
+                  return;
+                }
                 fetch(BASE_URL + "/api/v1/login", {
                   method: "POST",
                   headers: {
@@ -51,6 +54,9 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                 })
                   .then((response) => response.json())
                   .then((data) => {
+                    if (!data.token) {
+                      return;
+                    }
                     localStorage.setItem("token", data.token);
                     dispatch(login());
                     onClose();

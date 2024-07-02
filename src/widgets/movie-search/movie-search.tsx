@@ -37,12 +37,17 @@ export const MovieSearch = () => {
   );
 
   useEffect(() => {
-    const newSearchParams = new URLSearchParams(searchParams);
-    genreValue && newSearchParams.set("genre", genreValue);
-    releaseYear && newSearchParams.set("release_year", releaseYear);
+    const newSearchParams = new URLSearchParams();
+    if (genreValue !== "0") {
+      genreValue && newSearchParams.set("genre", genreValue);
+    }
+    if (releaseYear !== "0") {
+      releaseYear && newSearchParams.set("release_year", releaseYear);
+    }
     titleValue && newSearchParams.set("title", titleValue);
     page && newSearchParams.set("page", String(page));
     setSearchParams(newSearchParams.toString());
+    console.log(newSearchParams);
   }, [
     titleValue,
     genreValue,
