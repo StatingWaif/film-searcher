@@ -6,11 +6,15 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Avatar } from "../avatar";
 import { RootState } from "../../../shared/store/store";
-import { logout } from "../../../shared/store/authSlice";
+import { login, logout } from "../../../shared/store/authSlice";
 
 export const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  if (token) {
+    dispatch(login());
+  }
   const isAuth = useSelector((state: RootState) => state.auth.isAuth);
   const [modalOpened, setModalOpened] = useState<boolean>(false);
   return (
